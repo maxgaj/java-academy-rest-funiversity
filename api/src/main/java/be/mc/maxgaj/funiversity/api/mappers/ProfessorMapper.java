@@ -1,12 +1,14 @@
 package be.mc.maxgaj.funiversity.api.mappers;
 
-import be.mc.maxgaj.funiversity.api.mappers.dtos.CreateProfessorDto;
-import be.mc.maxgaj.funiversity.api.mappers.dtos.ProfessorDto;
+import be.mc.maxgaj.funiversity.api.dtos.CreateProfessorDto;
+import be.mc.maxgaj.funiversity.api.dtos.ProfessorDto;
 import be.mc.maxgaj.funiversity.domain.Professor;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ProfessorMapper {
 
-    public ProfessorDto mapToDto(Professor professor){
+    public ProfessorDto mapToDto(Professor professor) {
         return new ProfessorDto()
                 .setFirstName(professor.getFirstName())
                 .setLastName(professor.getLastName())

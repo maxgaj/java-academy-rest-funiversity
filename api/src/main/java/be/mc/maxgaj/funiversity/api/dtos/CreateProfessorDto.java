@@ -1,4 +1,4 @@
-package be.mc.maxgaj.funiversity.api.mappers.dtos;
+package be.mc.maxgaj.funiversity.api.dtos;
 
 public class CreateProfessorDto {
     private String firstName;
